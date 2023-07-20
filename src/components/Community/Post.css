@@ -1,0 +1,40 @@
+.post-container {
+  border: 2px solid #f5deb3;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.post-content {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.add-reply-button {
+  background-color: #f5deb3;
+  border: none;
+  border-radius: 5px;
+  color: #2f4f4f;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.toggle-replies-button {
+  background-color: #f5deb3;
+  border: none;
+  border-radius: 5px;
+  color: #2f4f4f;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.replies-container {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f5deb3;
+  border: 2px solid #2f4f4f;
+  border-radius: 10px;
+}

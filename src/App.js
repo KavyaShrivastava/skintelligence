@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import Home from './pages';
+import SkinExpertsPage from './pages/skinexperts';
+import Resources from './pages/resources';
+import CommunityPage from './pages/community';
+import Login from './pages/Login';
+import Profile from './components/Profile';
+import ProfilePage from './pages/profilepage';
+import React, { useCallback, useContext, useState } from 'react';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <Router>
+      <Routes>
+        <Route path = "/" element = {<Home/>}/>
+        <Route element = {<ProfilePage/>} path = "/profile" exact/>
+        <Route path="/skinexperts" element = {<SkinExpertsPage />}/>
+        <Route path="/community" element = {<CommunityPage />}/>
+        <Route path="/resources" element = {<Resources />}/>
+        <Route path="/login" element = {<Login />}/>
+      </Routes>
+    </Router>
+
+      );
 }
 
 export default App;
